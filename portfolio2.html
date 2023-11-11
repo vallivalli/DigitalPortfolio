@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>your Name-portfolio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 19px;
+                padding: 0;
+                background-color:rgb(255, 153, 0);
+            } 
+            header {
+                background-color:rgb(255, 42, 0);
+                color:rgba(0, 0, 0, 0.744);
+                text-align: center;
+                padding: 2rem 0;
+                position: relative; /* Add this */
+            }
+            
+            .header-content h1 {
+                font-size: 2.8rem;
+            }
+
+            /* Add styles for the round profile picture */
+            .profile-picture {
+                width: 100px; /* Adjust the size as needed */
+                height: 90px;
+                border-radius:   75%; /* Create a circular shape */
+                object-fit: cover; /* To ensure the image fills the circular area */
+                position: absolute; /*Add this */
+                top: 38px; /* Adjust top position as needed */
+                left: 78px; /*Adjust left position as needed */
+            }
+
+            nav {
+                background-color:rgb(255, 111, 0);
+                color:black;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style-type: circle;
+                padding: 13px;
+                box-sizing: 10px pink;
+            }
+            nav ul li {
+                display: inline;
+                margin: 30px;
+
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color:black;
+            }
+
+            .section-content {
+                background-color:rgb(255, 94, 0);
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-sizing: 10px gray;
+            }
+                
+            .download-button {
+                background-color:yellow;
+                color:red;
+                padding: 0.5rem 1rem;
+                text-decoration: double;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .download-button:hover {
+                background-color:orange;
+            }
+
+            footer {
+                text-align: center;
+                padding: 1rem;
+                background-color:rgb(255, 77, 0);
+                color:red;
+                border-radius: 20px;
+                padding: 1rem;
+            }
+
+            ul {
+                list-style-type: square;
+                padding-left: 20px;
+            }
+            </style>
+            </head>
+            </html>
+
+
+
+    
+    <header>
+<div class="header-content">
+    <!--Add your profile picture here-->
+    <img src="valli.jpg" alt="Your Profile picture" class="profile-picture">
+    <h1>Valli M</h1>
+    </div>
+    </header>
+<nav>
+        <ul>
+           <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li> 
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#resume">Resume</a></li>
+            </ul>
+            </nav>
+
+            <section id="about">
+                <div class="section-content">
+                    <h2>About Me</h2>
+                    <p>Hello Everybody! This is Valli and I am a computer science student</p>
+                    </div>
+                    </section>
+
+                    <section id="education">
+                        <div class="section-content">
+                            <h2>B.SC</h2>
+                            <P>Ganesar college of arts and science-Melaisivapuri</P>
+                            </div>
+                    </section>
+
+                    <Section id="skills">
+                        <div class="section-content">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li>java</li>
+                                <li>programming in c++</li>
+                                <li>Basic in HTML and css</li>
+                                <li>strong in c</li>
+                                </ul>
+                                </div>
+                                </Section>
+
+                                <section id="project">
+                                    <div class="section-content">
+                                        <h2>Project</h2>
+                                        <ul>
+                                            <li><a href="file:///C:/Users/Mithra/Documents/html.tutorial/dh.html">project 1</a></li>
+                                    </ul>
+                                </div>
+                                    </section>
+
+                                    <section id="resume">
+                                        <center>
+                                            <div class="section-content">
+                                                <h2>Resume</h2>
+                                                <a href="resume.pdf" class="download-button">Download cv</a>
+                                            </div>
+                                    </section>
+                                    
+
+                                <footer>
+                                    <p>&copy;2023 Valli M</p>
+                                    </footer>
+                                </center>
+                                    <script>
+                                        // smooth scrolling to section when clicking on navigation links
+                                        document.queryselectorAll('a[href^="#"]').forEach(anchor => {
+                                            anchor.addEventListener('click', function(e) {
+                                                e.preventDefault();
+
+                                                const targetId = this.getAttribute('href').substring(1);
+                                                const target Element = document.getElementById(targetId);
+
+                                            
+                                               if (targetElement) {
+                                                window.scrollTo({
+                                                    top: targetElement.offsetTop;
+                                                    behavior: 'smooth'
+                                                });
+                                               }
+                                            });
+                                        });
+                                        </script>
+                                        </body>
+                                    </html>
